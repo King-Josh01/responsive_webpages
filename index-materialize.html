@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=t, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: grey;
+        }
+    </style>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+</head>
+<body>
+    <a href="index.html" class="waves-effect waves-light btn">Home</a>
+    <a href="index-bootstrap.html" class="waves-effect waves-light btn">Bootstrap</a>
+    <section>
+        <div class="row">
+            <div class="col s12 m12 l6"><h5>{{data.user.fullName}}</h5></div>
+            <div class="col s12 m12 l6"><img src={{data.user.photo}} width="35%"></div>
+          </div>
+    </section>
+    <hr>
+    <section>
+        <div class="row">
+            <div class="col s12"><p><h5>{{data.city.name}}</h5></p></div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l6"><p><img src="{{data.city.photo}}" width="50%" alt="" srcset=""></p></div>
+            <div class="col s12 m6 l6"><p>{{data.city.description}}</p></div>
+          </div>
+    </section>
+    <hr>
+    <Section>
+        <h5>
+            {{data.foreignLanguage.language}}
+        </h5>
+        {{#each data.foreignLanguage.phrases}}
+        <div class="row">
+                  <div class="col s12 l4 m8">
+                    <h5>{{foreignLanguage}}</h5>
+                    <div class="col s12 l7 m8">
+                      <p class = "text-right" >{{englishPhrase}}</p> 
+                    </div>
+                    <div class="col s12 l5 m8">
+                      <!-- <img src= width="125%" class="rounded" alt="">  -->
+                    </div>
+                    </div>
+        {{/each}}
+    </Section>
+    <hr>
+    <section>
+        {{#each data.favouriteSubjects}}
+            <div class="row">
+                      <div class="col s12 l4 m8">
+                        <h5>{{name}}</h5>
+                        <div class="col s12 l7 m8">
+                          <p class = "text-right" >{{description}}</p> 
+                        </div>
+                        <div class="col s12 l5 m8">
+                            <img src={{photo}} width="100%" class="rounded" alt="image">
+                        </div>
+                        </div>
+         {{/each}}
+    </section>
+</body>
+</html>

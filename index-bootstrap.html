@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <a href="index.html" class="btn btn-primary" href="#" role="button">Home</a>
+    <a href="index-materialize.html" class="btn btn-primary" href="#" role="button">Materialize</a>
+    <section>
+        <section>
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm-4"><h5>{{data.user.fullName}}</h5></div>
+                  <div class="col-sm-8"><img src={{data.user.photo}} width="30%"></div>
+                </div>
+              </div>    
+    </section>
+    <hr>
+    <section>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-8"><h5>{{data.city.name}}</h5> </div>
+              <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm"><img src="{{data.city.photo}}" alt="" srcset=""></div>
+              <div class="col-sm"> {{data.city.description}}</div>
+            </div>
+          </div>
+    </section>
+    <hr>
+    <Section>
+        <div class="container text-center">
+            <div class="row">
+                <table class="striped bordered">
+                    <thead>
+                        <tr>
+                            <th>ENGLISH PHRASE</th>
+                            <th>FOREIGN PHRASE</th>
+                        </tr>
+                    </thead>
+                    {{#each data.foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                    </tr>
+                    {{/each}}
+                    <table>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <section>
+            <div class="container text-center">
+              {{#each data.favouriteSubjects}}
+              <div class="row">
+                <div class="col">                                
+                      <strong> <p>{{name}}</p></strong>
+                </div>                  
+                <div class="col">
+                  <p class = "text-right" >{{description}}</p>
+                </div>    
+                <div class="col s12 l5 m8">
+                    <img src={{photo}} width="50%" class="rounded" alt="image">
+                </div>                         
+              </div>
+           </div>
+           {{/each}}
+
+        <!-- {{#each data.favouriteSubjects}}
+            <div class="row">
+                      <div class="col s12 l4 m8">
+                        <h5>{{name}}</h5>
+                        <div class="col s12 l7 m8">
+                          <p class = "text-right" >{{description}}</p> 
+                        </div>
+                        <div class="col s12 l5 m8">
+                            <img src={{photo}} width="20%" class="rounded" alt="image">
+                        </div>
+                        </div>
+    {{/each}} -->
+    </section>
+    
+</body>
+</html>

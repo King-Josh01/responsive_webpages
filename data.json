@@ -1,0 +1,40 @@
+{
+    "user" : {
+        "fullName": "Joshua Samuel Onoriode Obukowho",
+        "photo" : "Self_Image.jpg"
+    },
+    "city" : {
+        "name" : "Paris",
+        "photo" : "Paris.jpeg",
+        "description" : "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré."
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "phrases" : [{
+            "englishPhrase" : "I love you babe",
+            "foreignLanguage" : "Je t'aime bébé"
+        },
+        {
+            "englishPhrase" : "I love God",
+            "foreignLanguage" : "J'aime Dieu"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Mineral Processing",
+            "description" : "Mineral processing is the art and technology of treating ores from mining areas in order to separate the valuable minerals from waste rock. It includes processes to provide a more concentrated material for the procedures of the following extractive metallurgy.",
+            "photo" : "Mineral_Processing.jpeg"
+        
+        },
+        {
+            "name" : "Hydrometallurgy",
+            "description" : "Hydrometallurgy is a technique within the field of extractive metallurgy, the obtaining of metals from their ores. Hydrometallurgy involve the use of aqueous solutions for the recovery of metals from ores, concentrates, and recycled or residual materials.",
+            "photo" : "Hydrometallurgy.jpeg"
+        },
+        {
+            "name" : "Life Sciences",
+            "description" : "The sciences concerned with the study of living organisms, including biology, botany, zoology, microbiology, physiology, biochemistry, and related subjects.",
+            "photo" : "Life_Sciences.jpeg"
+        }
+    ]
+}
